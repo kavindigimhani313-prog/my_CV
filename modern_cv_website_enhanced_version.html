@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kavindi Gimhani | Premium Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#e2e8f0;scroll-behavior:smooth}
+nav{display:flex;justify-content:space-between;padding:20px 40px;background:#020617;position:fixed;width:100%;top:0;z-index:1000}
+nav h2{color:#38bdf8}
+nav a{color:#cbd5f5;text-decoration:none;margin-left:20px;transition:0.3s}
+nav a:hover{color:#38bdf8}
+
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px}
+.hero h1{font-size:3.5rem;color:#38bdf8}
+.hero p{max-width:600px;margin:20px 0;color:#94a3b8}
+.btn{padding:12px 24px;margin:5px;background:#38bdf8;color:#020617;border:none;border-radius:5px;text-decoration:none;font-weight:500;transition:0.3s}
+.btn:hover{background:#0ea5e9}
+.btn-outline{background:transparent;border:1px solid #38bdf8;color:#38bdf8}
+
+section{padding:100px 40px}
+.container{max-width:1000px;margin:auto}
+.card{background:#020617;padding:25px;border-radius:12px;margin-bottom:20px;transition:0.3s}
+.card:hover{transform:translateY(-5px)}
+h2{margin-bottom:20px;color:#38bdf8}
+
+.skills span{display:inline-block;background:#1e293b;padding:8px 12px;border-radius:20px;margin:5px;transition:0.3s}
+.skills span:hover{background:#38bdf8;color:#020617}
+
+footer{text-align:center;padding:20px;background:#020617}
+
+/* Animation */
+.fade-in{opacity:0;transform:translateY(30px);transition:all 0.8s}
+.fade-in.show{opacity:1;transform:translateY(0)}
+
+/* Timeline */
+.timeline{position:relative;margin-top:30px;padding-left:30px}
+.timeline::before{content:"";position:absolute;left:15px;top:0;width:2px;height:100%;background:#38bdf8}
+.timeline-item{position:relative;margin-bottom:40px;opacity:0;transform:translateY(30px);transition:all 0.6s ease}
+.timeline-item.show{opacity:1;transform:translateY(0)}
+.timeline-icon{position:absolute;left:-2px;top:0;width:30px;height:30px;background:#38bdf8;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#020617;font-weight:bold}
+.timeline-content{background:#020617;padding:20px;border-radius:10px;margin-left:40px}
+.timeline-content h3{margin-bottom:5px}
+
+.profile-img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;margin-bottom:20px;box-shadow:0 0 25px rgba(56,189,248,0.6);transition:0.4s}
+.profile-img:hover{transform:scale(1.05);box-shadow:0 0 40px rgba(56,189,248,0.9)}
+.profile-img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;margin-bottom:20px;box-shadow:0 0 25px rgba(56,189,248,0.6);transition:0.4s}
+.profile-img:hover{transform:scale(1.05);box-shadow:0 0 40px rgba(56,189,248,0.9)}
+
+.typing{font-size:1.1rem;color:#94a3b8;min-height:24px}
+.cursor{display:inline-block;width:2px;background:#38bdf8;margin-left:5px;animation:blink 1s infinite}
+@keyframes blink{0%,50%,100%{opacity:1}25%,75%{opacity:0}}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>Kavindi</h2>
+<div>
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<img src="my.jpg" alt="Kavindi" class="profile-img">
+<h1>Kavindi Gimhani</h1>
+<p class="typing"><span id="typing-text"></span></p>
+<div>
+<a href="#contact" class="btn">Hire Me</a>
+<a href="cv.pdf" download class="btn btn-outline">Download CV</a>
+</div>
+</div>
+</div>
+</div>
+
+<section id="about" class="fade-in">
+<div class="container">
+<h2>About Me</h2>
+<div class="card">
+<p>A motivated and hardworking professional with experience in banking and human resource management. Passionate about contributing to organizational growth and personal development.</p>
+</div>
+</div>
+</section>
+
+<section id="experience" class="fade-in">
+<div class="container">
+<h2>Professional Experience</h2>
+<div class="card">
+<h3>Banking Professional</h3>
+<p>Citizens Development Business Finance (CDB Bank)</p>
+<p>Oparation Assistant (Gold loan Officer)</p>
+<p>2024 - Present</p>
+<p>Working in the banking sector, handling customer service, financial operations, and supporting daily banking activities efficiently.</p>
+</div>
+</div>
+</section>
+
+<section id="certifications" class="fade-in">
+<div class="container">
+<h2>Professional Certifications</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-icon">🎓</div>
+<div class="timeline-content">
+<h3>Advanced Certificate in HRM (ACHRM)</h3>
+<p>Chartered Institute of Personnel Management Sri Lanka (CIPM)</p>
+<p>2024</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">📘</div>
+<div class="timeline-content">
+<h3>Diploma in Professional HRM (DPHRM)</h3>
+<p>Chartered Institute of Personnel Management Sri Lanka (CIPM)</p>
+<p>2025</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-icon">🏦</div>
+<div class="timeline-content">
+<h3>Diploma in Banking & Finance (DBF)</h3>
+<p>Institute of Bankers of Sri Lanka (IBSL)</p>
+<p>2026</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="education" class="fade-in">
+<div class="container">
+<h2>Education</h2>
+<div class="card">
+<h3>G.C.E. Advanced Level (2022/2023)</h3>
+<p>Sinhala - C | Political Science - C | Buddhism & Civilisation - C</p>
+</div>
+
+<div class="card">
+<h3>G.C.E. Ordinary Level (2019)</h3>
+<p>Buddhism - B | Sinhala - B | English - C | Mathematics - C | Geography - B | ICT - C | History - S | Science  - S | Sinhala Lit. - C</p>
+</div>
+
+<div class="card">
+<h3>G.C.E. Ordinary Level - Tamil (2020)</h3>
+<p>Tamil - S</p>
+</div>
+</div>
+</section>
+
+<section id="skills" class="fade-in">
+<div class="container">
+<h2>Skills</h2>
+<div class="card skills">
+<span>Communication</span>
+<span>Teamwork</span>
+<span>Problem Solving</span>
+<span>HR Management</span>
+<span>Banking Operations</span>
+<span>Adaptability</span>
+</div>
+</div>
+</section>
+
+<section id="contact" class="fade-in">
+<div class="container">
+<h2>Contact</h2>
+<div class="card">
+<p>📞 +94 74 133 1163</p>
+<p>📧 kavindigimhani313@gmail.com</p>
+<p>📍 Bentota, Sri Lanka</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Kavindi Gimhani</p>
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+window.addEventListener('scroll', () => {
+  elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+
+  timelineItems.forEach((item, index) => {
+    const rect = item.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 50){
+      setTimeout(()=>{
+        item.classList.add('show');
+      }, index * 200);
+    }
+  });
+});
+
+// Typing effect
+const text = "Banking & HRM Professional | Dedicated | Team Player | Positive Mindset";
+const typingElement = document.getElementById("typing-text");
+let index = 0;
+
+function typeEffect(){
+  if(index < text.length){
+    typingElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeEffect, 50);
+  }
+}
+
+// Start typing on load
+window.addEventListener("load", () => {
+  typeEffect();
+});
+
+</script>
+
+</body>
+</html>
